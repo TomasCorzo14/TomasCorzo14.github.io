@@ -29,3 +29,11 @@ details summary:hover {
     border-radius: 80px;
 }
 
+
+
+@media (max-width: 450px){
+    iframe{
+        width: 70%;
+        height: 80%;
+    }
+}
