@@ -13,34 +13,36 @@
     <a id="volver" href="index.html"><img src="public/images/flechaVolver.png" alt="Boton de volver"></a>
 
     <form action="">
-        <label>Ingredientes <br>
-            <input type="checkbox" name="Ingrediente" value="Tomate">
-            Tomate <br>
-            <input type="checkbox" name="Ingrediente" value="Cebolla">
-            Cebolla <br>
-            <input type="checkbox" name="Ingrediente" value="Panceta">
-            Panceta <br>
-            <input type="checkbox" name="Ingrediente" value="Lechuga">
-            Lechuga <br>
+        <h1>PEDIDO</h1>
+        <div class="formaEntrega">
+            <label>Ingredientes <br>
+                <input type="checkbox" name="Ingrediente" value="Tomate"> Tomate <br>
+                <input type="checkbox" name="Ingrediente" value="Cebolla"> Cebolla <br>
+                <input type="checkbox" name="Ingrediente" value="Panceta"> Panceta <br>
+                <input type="checkbox" name="Ingrediente" value="Lechuga"> Lechuga <br>
+            </label>
+    
+            <h4>Forma de entrega:</h4>
+            <input type="radio" id="local" name="formaEntrega" value="Retiro en el local">
+            <label for="local">Retiro en el local</label>
+    
+            <input type="radio" id="domicilio" name="formaEntrega" value="Envio a domicilio">
+            <label for="domicilio">Envio a domicilio</label>
+        </div>
+        
+        <label for="datoNombre">Nombre
+            <input id="datoNombre" type="text" required>
         </label>
-
-        <label for="">Nombre
-        <input id="datoNombre" type="text"></label required>
         <br>
-        
-        <label for="">Retiro en el local</label>
-        <input type="radio" id="local" name="formaEntrega" value="Retiro en el local" required>
-        
-        <label for="">Envio a domicilio</label>
-        <input type="radio" id="domicilio" name="formaEntrega" value="Envio a domicilio" required>
-        
-
-        <label for="">Direccion
-        <input id="datoDireccion" type="text"></label>
+    
+        <label for="datoDireccion">Direccion
+            <input id="datoDireccion" type="text" style="opacity: 0; transition: opacity 0.3s;" disabled="true">
+        </label>
         <br>
-
-        <label for="">Mensaje
-        <input id="datoMensaje" type="text"></label>
+    
+        <label for="datoMensaje">Mensaje
+            <input id="datoMensaje" type="text">
+        </label>
         <br>
         <a onclick="enviar()" id="btnEnviar">Enviar</a>
     </form>
