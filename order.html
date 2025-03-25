@@ -13,7 +13,7 @@
     <a id="volver" href="index.html"><img src="public/images/flechaVolver.png" alt="Boton de volver"></a>
 
     <form action="">
-        <h1>PEDIDO</h1>
+        <h2>PEDIDO</h2>
         <div class="formaEntrega">
             <label>Ingredientes <br>
                 <input type="checkbox" name="Ingrediente" value="Tomate"> Tomate <br>
@@ -21,8 +21,19 @@
                 <input type="checkbox" name="Ingrediente" value="Panceta"> Panceta <br>
                 <input type="checkbox" name="Ingrediente" value="Lechuga"> Lechuga <br>
             </label>
+
+            <h4>Metodo de pago*:</h4>
+            <input type="radio" id="efectivo" name="metodoPago" value="En efectivo">
+            <label for="efectivo">Efectivo</label>
     
-            <h4>Forma de entrega:</h4>
+            <input type="radio" id="transferencia" name="metodoPago" value="Por transferencia">
+            <label for="transferencia">Transferencia</label>
+            <br>
+            <label for="datoAbonar" id="textAbonar" style="opacity: 0; transition: opacity 0.3s;">¿Con cuánto abonará?
+                <input id="datoAbonar" type="number" style="opacity: 0; transition: opacity 0.3s;" disabled="true">
+            </label>
+
+            <h4>Forma de entrega*:</h4>
             <input type="radio" id="local" name="formaEntrega" value="Retiro en el local">
             <label for="local">Retiro en el local</label>
     
@@ -30,8 +41,8 @@
             <label for="domicilio">Envio a domicilio</label>
         </div>
         
-        <label for="datoNombre">Nombre
-            <input id="datoNombre" type="text" required>
+        <label for="datoNombre">Nombre*
+            <input id="datoNombre" type="stext" required>
         </label>
         <br>
     
@@ -48,6 +59,6 @@
     </form>
     
     <script src="public/main.js"></script>
-
+    <p style="color: beige; padding-bottom: 10px;">Los campos marcados con * deben ser rellenados obligatoriamente.</p>
 </body>
 </html>
