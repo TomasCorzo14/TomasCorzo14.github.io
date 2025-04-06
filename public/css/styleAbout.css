@@ -12,6 +12,11 @@ body{
 }
 
 
+p{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 details summary {
     cursor: pointer;
     padding: 10px;
@@ -21,6 +26,8 @@ details summary {
     border-radius: 5px;
     font-weight: bold;
     color: #333;
+    margin-left: 5%;
+    margin-right: 5%;
     transition-duration: 1s;
 }
 

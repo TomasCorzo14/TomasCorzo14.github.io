@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <a id="volver" href="index.html"><img src="public/images/flechaVolver.png" alt="Boton de volver"></a>
+    <a id="volver" href="index.html" class="btnvolver"><img src="public/images/flechaVolver.png" alt="Boton de volver"></a>
 
     <form action="">
         <h2>PEDIDO</h2>
@@ -30,7 +30,7 @@
             <label for="transferencia">Transferencia</label>
             <br>
             <label for="datoAbonar" id="textAbonar" style="opacity: 0; transition: opacity 0.3s;">¿Con cuánto abonará?
-                <input id="datoAbonar" type="number" style="opacity: 0; transition: opacity 0.3s;" disabled="true">
+                <input id="datoAbonar" type="number" style="opacity: 0; transition: opacity 0.3s;" min="1" disabled="true">
             </label>
 
             <h4>Forma de entrega*:</h4>

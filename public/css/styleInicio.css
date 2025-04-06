@@ -33,6 +33,11 @@ body{
     top: 55%;
 }
 
+
+p{
+    margin-left: 5%;
+    margin-right: 5%;
+}
 .botonPrincipio:hover{
     transform: translateY(-4px);
     background-color: rgb(145, 145, 145);
@@ -65,11 +70,11 @@ body{
 
 @media (max-width: 450px){
     h1{
-        font-size: 20px;
+        font-size: 25px;
     }
     .botonPrincipio{
-        height: 25px;
-        width: 25px;
+        height: 30px;
+        width: 30px;
         border-radius: 10px;
     }
 }
