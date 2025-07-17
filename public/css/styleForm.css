@@ -1,0 +1,65 @@
+body{
+    background-image: linear-gradient(to bottom, transparent 10%, black 95%), url(../images/Logo.png);
+    background-repeat: space;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+
+form {
+    color: black;
+    max-width: 350px;
+    margin: auto;
+    padding: 3%;
+    border-radius: 10px;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.formaEntrega{
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+    padding-top: 15px;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-bottom: 15px;
+    background-color: white;
+}
+
+#datoDireccion{
+    opacity: 0;
+}
+
+input{
+    padding-bottom: 3%;
+}
+
+#btnEnviar{
+    background-color: rgb(66, 8, 8);
+    color: #b0b0b0;
+    border-radius: 5px;
+    transition-duration: 1s;
+    cursor:pointer;
+    
+}
+
+#btnEnviar:hover{
+    color:rgb(0, 0, 0);
+    background-color:#b0b0b0;
+
+}
+
+h1{
+    text-align: center;
+}
+
+
+

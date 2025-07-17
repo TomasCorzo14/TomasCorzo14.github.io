@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="public/images/miniLogo.png">
+    <link rel="stylesheet" href="public/css/styleForm.css">
+
+    <title>Realizar un pedido</title>
+</head>
+<body>
+
+    <a id="volver" href="index.html" class="btnvolver"><img src="public/images/flechaVolver.png" alt="Boton de volver"></a>
+
+    <form action="">
+        <h2>FINALIZAR PEDIDO</h2>
+        <div class="formaEntrega">
+            <label>Ingredientes <br>
+                <input type="checkbox" name="Ingrediente" value="Tomate"> Tomate <br>
+                <input type="checkbox" name="Ingrediente" value="Cebolla"> Cebolla <br>
+                <input type="checkbox" name="Ingrediente" value="Panceta"> Panceta <br>
+                <input type="checkbox" name="Ingrediente" value="Lechuga"> Lechuga <br>
+            </label>
+
+            <h4>Metodo de pago*:</h4>
+            <input type="radio" id="efectivo" name="metodoPago" value="En efectivo">
+            <label for="efectivo">Efectivo</label>
+    
+            <input type="radio" id="transferencia" name="metodoPago" value="Por transferencia">
+            <label for="transferencia">Transferencia</label>
+            <br>
+            <label for="datoAbonar" id="textAbonar" style="opacity: 0; transition: opacity 0.3s;">¿Con cuánto abonará?
+                <input id="datoAbonar" type="number" style="opacity: 0; transition: opacity 0.3s;" min="1" disabled="true">
+            </label>
+
+            <h4>Forma de entrega*:</h4>
+            <input type="radio" id="local" name="formaEntrega" value="Retiro en el local">
+            <label for="local">Retiro en el local</label>
+    
+            <input type="radio" id="domicilio" name="formaEntrega" value="Envio a domicilio">
+            <label for="domicilio">Envio a domicilio</label>
+        </div>
+        
+        <label for="datoNombre">Nombre*
+            <input id="datoNombre" type="stext" required>
+        </label>
+        <br>
+    
+        <label for="datoDireccion">Direccion
+            <input id="datoDireccion" type="text" style="opacity: 0; transition: opacity 0.3s;" disabled="true">
+        </label>
+        <br>
+    
+        <label for="datoMensaje">Mensaje
+            <input id="datoMensaje" type="text">
+        </label>
+        <br>
+        <a onclick="enviar()" id="btnEnviar">Enviar</a>
+    </form>
+    
+    <script src="public/main.js"></script>
+    <p style="color: beige; padding-bottom: 10px;">Los campos marcados con * deben ser rellenados obligatoriamente.</p>
+</body>
+</html>

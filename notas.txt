@@ -1,0 +1,93 @@
+¡Los formularios en HTML ofrecen muchísimas opciones y variantes! Puedes combinarlas para recopilar diferentes tipos de datos. Aquí te dejo una lista detallada de los elementos más comunes y sus variantes:
+
+### Campos de entrada básicos
+1. **Text (`<input type="text">`)**: Campo para texto de línea única.
+2. **Password (`<input type="password">`)**: Campo para texto oculto (contraseñas).
+3. **Email (`<input type="email">`)**: Campo específico para direcciones de correo.
+4. **Number (`<input type="number">`)**: Campo para números; puede incluir flechas para aumentar/disminuir.
+5. **Date (`<input type="date">`)**: Selector de fecha.
+6. **Time (`<input type="time">`)**: Selector de hora.
+7. **Range (`<input type="range">`)**: Barra deslizante con valores numéricos.
+8. **Tel (`<input type="tel">`)**: Campo para números de teléfono.
+9. **URL (`<input type="url">`)**: Campo para direcciones web.
+10. **Search (`<input type="search">`)**: Campo optimizado para búsquedas.
+
+### Selección y opciones
+1. **Checkbox (`<input type="checkbox">`)**: Opciones múltiples que se pueden marcar.
+2. **Radio (`<input type="radio">`)**: Opciones exclusivas (selección única dentro de un grupo).
+3. **Dropdown (`<select>` y `<option>`)**: Menú desplegable con opciones predefinidas.
+
+Ejemplo:
+```html
+<select>
+    <option value="opcion1">Opción 1</option>
+    <option value="opcion2">Opción 2</option>
+</select>
+```
+
+### Entrada más avanzada
+1. **Textarea (`<textarea>`)**: Campo para texto de varias líneas.
+2. **File (`<input type="file">`)**: Permite cargar archivos.
+3. **Color (`<input type="color">`)**: Selector de color.
+4. **Hidden (`<input type="hidden">`)**: Campo invisible para almacenar datos en segundo plano.
+
+### Botones
+1. **Submit (`<button type="submit">`)**: Envía los datos del formulario.
+2. **Reset (`<button type="reset">`)**: Restaura los campos del formulario a su estado inicial.
+3. **Button (`<button type="button">`)**: Botón genérico para ejecutar funciones específicas con JavaScript.
+
+### Seguridad y validación
+1. **Required (`required`)**: Asegura que el campo debe completarse antes de enviar.
+2. **Pattern (`pattern`)**: Permite validar con expresiones regulares.
+3. **Min/Max (`min` y `max`)**: Restringe rangos de valores en campos numéricos o fechas.
+4. **Placeholder (`placeholder`)**: Texto de ejemplo que aparece dentro de un campo vacío.
+5. **Autofocus (`autofocus`)**: Coloca el cursor automáticamente en un campo al cargar la página.
+6. **Disabled (`disabled`)**: Inhabilita un campo para que no se pueda editar.
+7. **Readonly (`readonly`)**: Evita edición directa pero permite copiar.
+
+### Organización y estructura
+1. **Fieldset y Legend**: Agrupa y titula un conjunto de campos.
+   ```html
+   <fieldset>
+       <legend>Información Personal</legend>
+       <input type="text" placeholder="Nombre">
+       <input type="email" placeholder="Correo Electrónico">
+   </fieldset>
+
+
+const datoNombre = document.querySelector("#datoNombre");
+const datoMensaje = document.querySelector("#datoMensaje");
+const seleccionados = document.querySelectorAll('input[type=checkbox]:checked');
+const datoDireccion = document.querySelector('#datoDireccion')
+
+
+const btnEnviar= document.querySelector('#btnEnviar');
+
+const nombre = ('Nombre: ')
+const direccion = ('Dirección: ')
+const productos = ('Productos: ')
+
+
+
+/* %20 espacio %0A Salto de linea */
+var mensaje;
+
+function enviar(){
+    const seleccionados = document.querySelectorAll('input[type="checkbox"]:checked');
+    let nombresSeleccionados = "";
+    
+    for (let i = 0; i < seleccionados.length; i++) {
+          nombresSeleccionados += seleccionados[i].value;
+        if (i < seleccionados.length - 1) {
+            nombresSeleccionados += " "; // o coma, dependiendo del separador que prefieras
+        }
+        }
+    mensaje = `https://api.whatsapp.com/send?phone=+5493547672596&text=${nombre}${datoNombre.value}%0A${direccion}${datoDireccion.value}%0A${datoMensaje.value}%0A${productos}${nombresSeleccionados}`
+    btnEnviar.href = mensaje
+}
+
+
+
+
+Pancho, hamburguesa, lomito, pizza y sanguche de milanesa.
+
