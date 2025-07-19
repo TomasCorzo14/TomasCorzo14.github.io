@@ -25,6 +25,8 @@ body{
     align-items: center;
     justify-content: space-around;
     gap: 1rem;
+    flex-wrap: wrap;
+    margin: 20px;
 }
 
 .elementosCat{
