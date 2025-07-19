@@ -31,11 +31,11 @@ nav a{
     margin: 10px;
     font-weight: 600;
     padding: 10px;
-    transition-duration: 1s;
+    transition-duration: 0.8s;
 }
 
 nav a:hover{
-    color: rgb(189, 95, 60);
+    color: #B5181A;
 }
 
 .botonFlotante{
@@ -55,7 +55,7 @@ nav a:hover{
 
 #carrito{    
     background-image: url(../images/carritoCompras.png);
-    background-color: white;
+    background-color: beige;
     position: fixed;
     top: 110px;
     right: 25px;
@@ -69,7 +69,7 @@ nav a:hover{
     transform: translateY(-8px);
 }
 #carrito:hover{
-    background-color: gray;
+    background-color: lightgreen;
 }
 
 .piePagina{

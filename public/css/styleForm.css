@@ -1,23 +1,38 @@
 body{
-    background-image: linear-gradient(to bottom, transparent 10%, black 95%), url(../images/Logo.png);
+    background-image: linear-gradient(to bottom, transparent 10%, var(--rojo-vino) 95%), url(../images/Logo.png);
     background-repeat: space;
     background-position: center;
     background-attachment: fixed;
+    color: var(--gris-claro);
 }
 
 
 
 
 form {
-    color: black;
+    color: var(--negro);
     max-width: 350px;
     margin: auto;
     padding: 3%;
     border-radius: 10px;
-    background-color: gray;
+    background-color: var(--lavanda);
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 0 10px 2px var(--gris-oscuro);
+}
+:root {
+  --negro: #000000;
+  --gris-oscuro: #222222;
+  --gris-medio: #808080;
+  --gris-claro: #b0b0b0;
+  --blanco: #ffffff;
+  --rojo-vino: #8B1E3F;
+  --verde-esmeralda: #2ECC40;
+  --azul-petroleo: #176087;
+  --amarillo-mostaza: #FFD447;
+  --naranja-quemado: #FF6F3C;
+  --lavanda: #A593E0;
 }
 
 
@@ -31,7 +46,8 @@ form {
     padding-left: 9px;
     padding-right: 9px;
     padding-bottom: 15px;
-    background-color: white;
+    background-color: var(--blanco);
+    border: 2px solid var(--azul-petroleo);
 }
 
 #datoDireccion{
@@ -40,25 +56,39 @@ form {
 
 input{
     padding-bottom: 3%;
+    border: 1.5px solid var(--gris-medio);
+    border-radius: 4px;
+    background-color: var(--gris-claro);
+    color: var(--negro);
+    transition: border-color 0.3s;
+}
+input:focus {
+    border-color: var(--verde-esmeralda);
+    outline: none;
 }
 
 #btnEnviar{
-    background-color: rgb(66, 8, 8);
-    color: #b0b0b0;
+    background-color: var(--rojo-vino);
+    color: var(--amarillo-mostaza);
     border-radius: 5px;
-    transition-duration: 1s;
+    border: none;
+    padding: 8px 20px;
+    font-weight: bold;
+    transition-duration: 0.4s;
     cursor:pointer;
-    
+    box-shadow: 0 2px 8px 0 var(--gris-oscuro, #222);
 }
 
 #btnEnviar:hover{
-    color:rgb(0, 0, 0);
-    background-color:#b0b0b0;
-
+    color: var(--blanco);
+    background-color: var(--naranja-quemado);
+    box-shadow: 0 4px 16px 0 var(--naranja-quemado, #FF6F3C);
 }
 
 h1{
     text-align: center;
+    color: var(--azul-petroleo);
+    letter-spacing: 1px;
 }
 
 

@@ -1,5 +1,5 @@
 body{    
-    background: linear-gradient(to bottom, #ff7e5f, #80400f); 
+    background: linear-gradient(to bottom, gray, black); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -12,10 +12,15 @@ body{
     
 }
 
+:root {
+  --rojo-hover: #B5181A;
+  --rojo-sombra: #B61B1D;
+}
+
 
 .contenedorCat{
     color: black;
-    background-color: beige;
+    background-color: rgb(206, 206, 184);
     border-radius: 15px;
     padding: 5px ;
 }
