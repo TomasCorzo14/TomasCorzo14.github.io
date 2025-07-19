@@ -52,6 +52,12 @@ body{
     }
 }
 
+@media (max-width: 1000px){
+    .elementosCat img{
+        height: 3rem;
+        width: 3rem;
+    }
+}
 
 .botonPrincipio{
     height: 35px;
