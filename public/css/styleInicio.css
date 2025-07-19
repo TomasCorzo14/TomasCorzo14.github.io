@@ -52,9 +52,13 @@ body{
 }
 
 @media (max-width: 450px){
+    .contenedorCat{
+        padding: 3px;
+    }
     .elementosCat img{
         height: 3rem;
         width: 3rem;
+        padding: 5px;
     }
 }
 

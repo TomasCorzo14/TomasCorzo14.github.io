@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(to bottom, transparent 10%, var(--rojo-vino) 95%), url(../images/Logo.png);
+    background-image: linear-gradient(to bottom, transparent 1%, black 95%), url(../images/Logo.png);
     background-repeat: space;
     background-position: center;
     background-attachment: fixed;
@@ -20,6 +20,7 @@ form {
     flex-direction: column;
     align-items: center;
     box-shadow: 0 0 10px 2px var(--gris-oscuro);
+    
 }
 :root {
   --negro: #000000;
@@ -33,6 +34,7 @@ form {
   --amarillo-mostaza: #FFD447;
   --naranja-quemado: #FF6F3C;
   --lavanda: #A593E0;
+  --rojo-hover: #B5181A;
 }
 
 
@@ -68,8 +70,8 @@ input:focus {
 }
 
 #btnEnviar{
-    background-color: var(--rojo-vino);
-    color: var(--amarillo-mostaza);
+    background-color: beige;
+    color: black;
     border-radius: 5px;
     border: none;
     padding: 8px 20px;
@@ -80,9 +82,9 @@ input:focus {
 }
 
 #btnEnviar:hover{
-    color: var(--blanco);
-    background-color: var(--naranja-quemado);
-    box-shadow: 0 4px 16px 0 var(--naranja-quemado, #FF6F3C);
+    color: white;
+    background-color: var(--rojo-hover);
+    box-shadow: 0 4px 16px 0 var(--rojo-hover);
 }
 
 h1{
